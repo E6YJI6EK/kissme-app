@@ -1,0 +1,40 @@
+.bottle {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
+  height: 100px;
+  width: 50px;
+  z-index: 1;
+}
+
+.img {
+  object-fit: contain !important;
+}
+
+.rotating {
+  animation: rotate 0.2s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 700px) {
+  .bottle {
+    height: 75px;
+    width: 37px;
+  }
+}
+
+@media (max-width: 450px) {
+  .bottle {
+    height: 50px;
+    width: 25px;
+  }
+}
